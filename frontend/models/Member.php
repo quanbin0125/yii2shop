@@ -43,7 +43,8 @@ class Member extends \yii\db\ActiveRecord implements IdentityInterface
     public function rules()
     {
         return [
-            [['username','password_hash', 'email', 'telephone','code','smscode'], 'required'],
+            [['username','password_hash', 'email', 'telephone','code'], 'required'],
+
             [['status', 'add_time', 'last_login_time', 'last_login_ip'], 'integer'],
             [['username', 'password_hash', 'email'], 'string', 'max' => 255],
             [['auth_key'], 'string', 'max' => 32],

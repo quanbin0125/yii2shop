@@ -41,7 +41,9 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+
                 'api/getYourFav'=>'api/get-your-fav',
+
 
             ],
         ],
