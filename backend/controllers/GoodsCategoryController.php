@@ -25,7 +25,7 @@ class GoodsCategoryController extends \yii\web\Controller
         $model = new GoodsCategory();
         if ($model->load(\Yii::$app->request->post()) && $model->validate()) {
             if ($model->parent_id == 0) {//判断上级分类ID是否是0
-                var_dump($model);exit;
+                //var_dump($model);exit;
                 $model->makeRoot();//创建一级分类
                 \Yii::$app->session->setFlash('success', '一级分类添加成功');
                 return $this->refresh();//刷新本页

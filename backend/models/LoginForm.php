@@ -22,7 +22,8 @@ class LoginForm extends Model
     {
         return [
             'username'=>'用户名',
-            'password_hash'=>'密码'
+            'password_hash'=>'密码',
+
         ];
     }
 
