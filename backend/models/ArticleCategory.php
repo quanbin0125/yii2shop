@@ -68,4 +68,8 @@ class ArticleCategory extends \yii\db\ActiveRecord
          */
         return $this->hasMany(Article::className(),['article_category_id'=>'id']);
     }
+
+    public static function ArticleCategorys(){
+       return self::find()->all();
+    }
 }

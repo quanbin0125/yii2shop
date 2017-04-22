@@ -1,4 +1,6 @@
-<?php
+
++
++<?php
 /* @var $this yii\web\View */
 echo \yii\bootstrap\Html::a('添加菜单',['menu/add'],['class'=>'btn btn-info']);
 ?>
